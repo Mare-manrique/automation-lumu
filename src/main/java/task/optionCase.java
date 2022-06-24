@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
+import org.openqa.selenium.remote.server.handler.FindElement;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static userinterface.HomePage.*;
@@ -23,13 +24,14 @@ public class optionCase implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        System.out.println("TEXTOOOOO"+texto.toUpperCase());
+        System.out.println("textooo:  "+ INPUT_TEXTO.resolveFor(actor).getText());
         actor.attemptsTo(
                 Enter.theValue(texto).into(INPUT_TEXTO),
                 Click.on(BUTTON_CASE),
                 Click.on(OPTION_CASE.of(option)),
                 Ensure.that(INPUT_TEXTO).text().isEqualTo(texto.toUpperCase())
         );
+
 
 
     }
