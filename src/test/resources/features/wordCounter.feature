@@ -13,6 +13,7 @@ Feature: wordcounter validation
     | borre                                     |
 
 
+
   @CaseOptionsScenario
   Scenario Outline: Juan validates that the button and case selection works correctly
     Given he goes to the browser and enters the page
