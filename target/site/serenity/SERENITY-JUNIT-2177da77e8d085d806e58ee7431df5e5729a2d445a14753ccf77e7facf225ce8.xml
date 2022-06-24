@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="wordcounter validation" skipped="0" tests="2" time="12.88" timestamp="2022-06-23 09:22:42"><testcase name="Juan validates that the button and case selection works correctly"><failure message="&#10;Expecting Input donde se ingresa el texto with text value that is equal to: &lt;&quot;HOLA SOY ANGELICA ESPITIA&quot;&gt;&#10;But got...................................................................: &lt;&quot;&quot;&gt;" type="java.lang.AssertionError">
+Expecting Input donde se ingresa el texto with text value that is equal to: &lt;"HOLA SOY ANGELICA ESPITIA"&gt;
+But got...................................................................: &lt;""&gt;</failure><system-err>
+Expecting Input donde se ingresa el texto with text value that is equal to: &lt;"HOLA SOY ANGELICA ESPITIA"&gt;
+But got...................................................................: &lt;""&gt;&#13;
+task.optionCase.performAs(optionCase.java:27)&#13;
+stepdefinitions.wordCounterStepDefinitions.heWritesTheSentenceToMakeUseOfTheButtonAndTheOption(wordCounterStepDefinitions.java:40)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>
