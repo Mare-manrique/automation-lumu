@@ -8,9 +8,10 @@ Feature: wordcounter validation
 
   Examples:
     | phrase                                    |
-    | maria                                     |
     | Hola, soy Maria Angelica Espitia Manrique |
+    | maria                                     |
     | borre                                     |
+
 
 
   @CaseOptionsScenario
